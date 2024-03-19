@@ -5,6 +5,7 @@ import MongoStore from "connect-mongo";
 import userRouter from "./routes/user.router.js"
 import sessionRouter from "./routes/session.router.js"
 import viewsRouter from "./routes/views.router.js"
+import productRouter from "./routes/products.router.js"
 import dataBase from "../src/database.js"
 import  ExpressHandlebars from "express-handlebars";
 
@@ -32,6 +33,7 @@ app.use(session ({
 app.use("/", userRouter)
 app.use ("/", sessionRouter)
 app.use("/", viewsRouter)
+app.use("/", productRouter)
 
 
 app.listen(PUERTO, () => {

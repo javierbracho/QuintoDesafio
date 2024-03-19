@@ -12,7 +12,7 @@ routerS.post("/login", async (req, res)=>{
             req.session.login = true
             req.session.user = {...user._doc}
 
-            res.redirect("/profile")
+            res.redirect("/products")
          } else {
             res.status(401).send({error: "Contraseña no valida"})
          }
