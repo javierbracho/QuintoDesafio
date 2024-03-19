@@ -1,13 +1,13 @@
 import Express from "express";
 import userModel from "../model/user.model.js"
 
-const router = Express.Router()
+const routerS = Express.Router()
 
-router.post("/login", (req, res)=>{
+routerS.post("/login", (req, res)=>{
     
 })
 
-router.get ("/logout", (req, res) => {
+routerS.get ("/logout", (req, res) => {
      if (req.session.login) {
         req.session.destroy()
      }
@@ -15,4 +15,4 @@ router.get ("/logout", (req, res) => {
 })
 
 
-export default router
+export default routerS
