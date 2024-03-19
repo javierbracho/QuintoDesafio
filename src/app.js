@@ -25,7 +25,7 @@ app.use(session ({
     saveUninitialized: true,
     store: MongoStore.create({
         mongoUrl: "mongodb+srv://jbracho07:coderhouse@cluster0.sd6827y.mongodb.net/E-Commerce?retryWrites=true&w=majority&appName=Cluster0",
-        ttl: 1000
+        ttl: 100
     })
 }))
 

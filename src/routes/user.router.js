@@ -5,6 +5,7 @@ const routerU = Express.Router()
 
 routerU.post("/user", async (req, res)=>{
     const {first_name, last_name, email, password, age} = req.body
+    console.log("Valor del campo de correo electrónico:", email);
 
     try {
         const findUser = await userModel.findOne({email: email})
