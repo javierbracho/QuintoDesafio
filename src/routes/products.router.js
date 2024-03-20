@@ -19,6 +19,7 @@ router.get("/products", async (req, res) => {
             const { ...rest } = producto.toObject();
             return rest
         });
+        
         const user = req.session.user;
 
 
